@@ -1,6 +1,6 @@
 Simple API project
 
-API is to create, remove, update and delete elements of tutorial data structure. 
+API is to create, get, update and delete elements of tutorial data structure. 
 No DB. 
 JSON format.
 
