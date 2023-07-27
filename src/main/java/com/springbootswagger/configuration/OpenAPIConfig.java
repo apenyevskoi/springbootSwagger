@@ -13,7 +13,6 @@ import java.util.List;
 
 /**
  * Swagger configuration class
- * Swagger 2
  * Two API servers: dev and prod
  * License: GNU
  * Server: http://localhost:8080/swagger-ui/index.html
