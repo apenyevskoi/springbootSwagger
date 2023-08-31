@@ -9,11 +9,7 @@ pipeline {
     booleanParam(defaultValue: false, description: 'Deploy app', name: 'DEPLOY')
   }
   stages {
-    
-    stage('Build') { }
-    
-    stage('Deploy') { }
-// Извлекаем проект 
+    // Извлекаем проект 
     stage('Checkout') {
   	steps {
 	      // Удаление всех файлов из рабочего каталога на сервере TestNode
