@@ -16,7 +16,6 @@ pipeline {
     // Загружаем архив с проектом на удаленный сервер. Деплоим его на MS SQL Server 
     stage('Deploy') { }
   }
-1)	Checkout
 stage('Checkout') {
   steps {
 	      // Удаление всех файлов из рабочего каталога на сервере TestNode
@@ -29,8 +28,6 @@ stage('Checkout') {
 		checkout scm
 	}
 }
-
-2)	Build
 stage('Build') {
 	// Команда when позволяет конвейеру определять, следует ли выполнять этап в зависимости от заданного условия. 
 	when {
@@ -50,8 +47,6 @@ stage('Build') {
 		bat "${SSISBuildPath} -p:${WORKSPACE}\\${SOLUTION}"
 	}
 }
-
-3)	Deploy
 stage("Deploy to Dev Env") {
 	when {
 		expression { 
